@@ -1,0 +1,168 @@
+# GitOps Continuous Delivery for Kubernetes
+brew "argocd"
+# Code searching, linting, rewriting
+brew "ast-grep"
+# Securely manage AWS API credentials using AWS SSO
+brew "aws-sso-cli"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
+brew "cilium-cli"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Kubernetes package manager
+brew "helm"
+# Network, Service & Security Observability for Kubernetes using eBPF
+brew "hubble"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Run local Kubernetes cluster in Docker
+brew "kind"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Package manager for kubectl plugins
+brew "krew"
+# Colorize your kubectl output
+brew "kubecolor"
+# CloudNativePG plugin for kubectl
+brew "kubectl-cnpg"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Fast, flexible, config-based cli for linting Markdown/CommonMark files
+brew "markdownlint-cli2"
+# CLI for Mermaid library
+brew "mermaid-cli"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Incremental parsing library
+brew "tree-sitter"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Create, run, and share large language models (LLMs)
+brew "ollama", restart_service: :changed
+# Theme for zsh
+brew "powerlevel10k"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# CLI for out-of-band management of Kubernetes nodes created by Talos
+brew "talosctl"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
+# Terragrunt version manager inspired by tfenv
+brew "tgenv"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Internet file retriever
+brew "wget"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Command-line interface for 1Password
+cask "1password-cli"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# System monitoring app
+cask "istat-menus"
+# Clipboard manager
+cask "maccy"
+# Spreadsheet software
+cask "microsoft-excel"
+# Word processor
+cask "microsoft-word"
+# VPN client for secure internet access and private browsing
+cask "nordvpn"
+# Music streaming service
+cask "spotify"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
+# Open-source code editor
+cask "visual-studio-code"
+# Native desktop client for WhatsApp
+cask "whatsapp"
+vscode "amazonwebservices.aws-toolkit-vscode"
+vscode "anthropic.claude-code"
+vscode "asvetliakov.vscode-neovim"
+vscode "catppuccin.catppuccin-vsc"
+vscode "charliermarsh.ruff"
+vscode "danielthielking.aws-cloudformation-yaml"
+vscode "dannysteenman.cloudformation-yaml-snippets"
+vscode "davidanson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "docker.docker"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "github.vscode-github-actions"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "hashicorp.hcl"
+vscode "hashicorp.terraform"
+vscode "hverlin.mise-vscode"
+vscode "kddejong.vscode-cfn-lint"
+vscode "mechatroner.rainbow-csv"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.black-formatter"
+vscode "ms-python.debugpy"
+vscode "ms-python.isort"
+vscode "ms-python.mypy-type-checker"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.live-server"
+vscode "ms-vscode.makefile-tools"
+vscode "redhat.vscode-knative"
+vscode "redhat.vscode-yaml"
+vscode "run-at-scale.terraform-doc-snippets"
+vscode "sourcery.sourcery"
+vscode "tamasfe.even-better-toml"
+vscode "tomoki1207.pdf"
+vscode "tyriar.sort-lines"
+vscode "usernamehw.errorlens"
+vscode "vue.volar"
+vscode "yzhang.markdown-all-in-one"
+krew "konfig"
+krew "virt"
+npm "@actual-app/api"

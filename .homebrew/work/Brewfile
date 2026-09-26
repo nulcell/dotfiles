@@ -1,0 +1,92 @@
+# GitOps Continuous Delivery for Kubernetes
+brew "argocd"
+# Code searching, linting, rewriting
+brew "ast-grep"
+# Securely manage AWS API credentials using AWS SSO
+brew "aws-sso-cli"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
+brew "cilium-cli"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Kubernetes package manager
+brew "helm"
+# Network, Service & Security Observability for Kubernetes using eBPF
+brew "hubble"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Run local Kubernetes cluster in Docker
+brew "kind"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Package manager for kubectl plugins
+brew "krew"
+# Colorize your kubectl output
+brew "kubecolor"
+# CloudNativePG plugin for kubectl
+brew "kubectl-cnpg"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Fast, flexible, config-based cli for linting Markdown/CommonMark files
+brew "markdownlint-cli2"
+# CLI for Mermaid library
+brew "mermaid-cli"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Incremental parsing library
+brew "tree-sitter"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# Theme for zsh
+brew "powerlevel10k"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Utility that provides fast incremental file transfer
+brew "rsync"
+# CLI for out-of-band management of Kubernetes nodes created by Talos
+brew "talosctl"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
+# Terragrunt version manager inspired by tfenv
+brew "tgenv"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Internet file retriever
+brew "wget"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+krew "konfig"
+krew "virt"
