@@ -3,6 +3,8 @@
 -- Add any additional options here
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.o.guifont = "FiraMono Nerd Font:h13"
+vim.opt.relativenumber = true
+vim.opt.number = true
 
 -- No remote plugins here; skip the provider probes (python's alone costs ~70ms).
 vim.g.loaded_node_provider = 0

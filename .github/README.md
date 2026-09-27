@@ -2,14 +2,14 @@
 
 My macOS dotfiles, stored as a bare git repo in `~/.cfg` with `$HOME` as the work tree ([how it works](https://www.atlassian.com/git/tutorials/dotfiles)).
 
-| What                 | Path                                     |
-| -------------------- | ---------------------------------------- |
+| What                 | Path                                                  |
+| -------------------- | ----------------------------------------------------- |
 | Neovim (LazyVim)     | `.config/nvim/` ([README](../.config/nvim/README.md)) |
-| tmux                 | `.tmux.conf`                             |
-| zsh + powerlevel10k  | `.zshrc`, `.zprofile`, `.p10k.zsh`       |
+| tmux                 | `.tmux.conf`                                          |
+| zsh + powerlevel10k  | `.zshrc`, `.zprofile`, `.p10k.zsh`                    |
 | Homebrew (minimal)   | `.homebrew/work/Brewfile` (work / temporary machines) |
-| Homebrew (full)      | `.homebrew/personal/Brewfile` (personal machines) |
-| Claude Code settings | `.claude/settings.json`                  |
+| Homebrew (full)      | `.homebrew/personal/Brewfile` (personal machines)     |
+| Claude Code settings | `.claude/settings.json`                               |
 
 ## Install on a new machine
 
@@ -58,13 +58,13 @@ BF=~/.homebrew/work/Brewfile       # work / temporary machines
 BF=~/.homebrew/personal/Brewfile   # personal machines
 ```
 
-| Task                                              | Command                                          |
-| ------------------------------------------------- | ------------------------------------------------ |
-| Install missing + upgrade outdated                | `brew update && brew bundle --file $BF`          |
-| Check whether anything is missing                 | `brew bundle check --file $BF --verbose`         |
-| List installed packages not in the Brewfile       | `brew bundle cleanup --file $BF`                 |
-| Uninstall those packages                          | `brew bundle cleanup --file $BF --force`         |
-| Add a package                                     | `brew install <pkg>`, then regenerate (below)    |
+| Task                                        | Command                                       |
+| ------------------------------------------- | --------------------------------------------- |
+| Install missing + upgrade outdated          | `brew update && brew bundle --file $BF`       |
+| Check whether anything is missing           | `brew bundle check --file $BF --verbose`      |
+| List installed packages not in the Brewfile | `brew bundle cleanup --file $BF`              |
+| Uninstall those packages                    | `brew bundle cleanup --file $BF --force`      |
+| Add a package                               | `brew install <pkg>`, then regenerate (below) |
 
 Regenerate a Brewfile from what's installed, then review `config diff` before committing:
 
