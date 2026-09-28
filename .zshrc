@@ -114,11 +114,32 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Kubernetes configs
-alias k='kubecolor'
-alias h='helm'
+# dotfiles bare repo (https://github.com/nulcell/dotfiles)
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Manual Configurations
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# mise
+eval "$(mise activate zsh)"
+
+# AWS CLI
+export AWS_PAGER=""
+export AWS_CLI_AUTO_PROMPT="on-partial"
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+complete -C '/opt/homebrew/bin/aws_completer' aws
+
+# terraform & terragrunt
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terragrunt terragrunt
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# Kubernetes
+alias k='kubecolor'
+alias h='helm'
 autoload -U +X bashcompinit && bashcompinit
 source <(k completion zsh)
 source <(h completion zsh)
@@ -129,26 +150,12 @@ source <(kind completion zsh)
 # source <(kompose completion zsh)
 # source <(istioctl completion zsh)
 
-# # Pyenv
+# # pyenv
 # export PYENV_ROOT="$HOME/.pyenv"
 # [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init - zsh)"
-
-# QoL
-export AWS_PAGER=
-export PATH="$HOME/.local/bin:$PATH"
-
-# mise
-eval "$(mise activate zsh)"
-
-# bun completions
-[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+# eval "$(pyenv init -)"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# dotfiles bare repo (https://github.com/nulcell/dotfiles)
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
+[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
