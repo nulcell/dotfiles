@@ -16,7 +16,7 @@ nvim # plugins and Mason tools install on first launch; then run :LazyHealth
 
 ## Keymaps
 
-Everything not listed here is a LazyVim default:
+Everything not listed here is a LazyVim default. For the full set, see [CHEATSHEET.md](CHEATSHEET.md), which is condensed from *LazyVim for Ambitious Developers*.
 
 - Core, plugin and LSP keymaps: <https://www.lazyvim.org/keymaps>
 - Extras document their own keys, e.g. Claude Code: <https://www.lazyvim.org/extras/ai/claudecode>
