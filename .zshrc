@@ -171,3 +171,9 @@ fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# Custom Configurations
+[ -s HOME/.zshrc-custom¥ ] && source $HOME/.zshrc-custom¥
+
+# Load your custom configurations (if any)
+[ -s "$HOME/.custom.zshrc" ] && source "$HOME/.custom.zshrc"
