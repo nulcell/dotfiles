@@ -98,6 +98,8 @@ cask "discord"
 cask "docker-desktop"
 # System monitoring app
 cask "istat-menus"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Clipboard manager
 cask "maccy"
 # Spreadsheet software
