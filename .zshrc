@@ -122,8 +122,8 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# mise
-eval "$(mise activate zsh)"
+# # mise
+# eval "$(mise activate zsh)"
 
 # AWS CLI
 export AWS_PAGER=""
